@@ -13,14 +13,20 @@ If you are having some issues, here is a link that goes through all of the steps
 
 Once Anaconda is installed, you can go to the search bar at the bottom of your screen (or click the windows key) and type "anaconda". You should see something come up called the Anaconda Prompt. This is like Command Prompt (CMD), but it is specifically for Anaconda commands and manipulation of environments in the Anaconda environment manager.
 
+![image](https://user-images.githubusercontent.com/50416928/141778323-dbe2f280-2740-4b4e-bc9a-5097f3b8e982.png)
+
 ## Configuring an environment in Anaconda
 
 The first thing we will do is make a new enviornment workspace to code in. We can do this by typing in this command into the Anaconda Prompt:
 conda create --name NAME_HERE
 
+![image](https://user-images.githubusercontent.com/50416928/141778447-3168e9ec-1ef7-4649-b14b-7912157bb0ad.png)
+
 This will create an environment with the name you choose to put in place of NAME_HERE.
 
 To enter this new enviornment, type: conda activate NAME_HERE, subsituting the name of your environment in instead of NAME_HERE.
+
+![image](https://user-images.githubusercontent.com/50416928/141778499-71a4a3e3-1878-4ed6-86c1-2a58d5121dd8.png)
 
 ## Installing matplotlib and pandas, or any package or library
 
@@ -29,7 +35,10 @@ To install any package or library you wish to use in your environment, once you 
 We will talk about these two packages in depth later, but for now install them so we can use them!
 
 To install matplotlib, type: conda install matplotlib
+![image](https://user-images.githubusercontent.com/50416928/141779281-bc8052af-151f-4702-936e-3ebe5a95e185.png)
+
 To install pandas, type: conda install pandas
+![image](https://user-images.githubusercontent.com/50416928/141779410-07a1da4d-8454-47d9-a052-3d24c971fb71.png)
 
 If you would like to explore either of these libraries, the documentation for matplotlib can be found here https://matplotlib.org/stable/contents.html and the documentation for pandas can be found here https://pandas.pydata.org/docs/
 
@@ -37,15 +46,24 @@ If you would like to explore either of these libraries, the documentation for ma
 
 Jupyter is a software that allows you to create "Notebooks" that contain code cells and markdown cells. We will go over this in depth later, but it is the main part of what we are learning about in this lesson. Anaconda just allows us to install Jupyter in an environment, so that anything you do in that environment will not affect anything else on your computer. This is super helpful for experimenting with code or if you are worried about changing something permanently.
 
-Once you have activated your enviornment, type conda install jupyter to install Jupyter Notebooks.
+Once you have activated your enviornment, type: conda install jupyter to install Jupyter Notebooks.
+![image](https://user-images.githubusercontent.com/50416928/141779480-1c7d161e-1322-4739-a601-0b030d9c944d.png)
+
 
 ## Accessing Jupyter Notebooks and Making a Notebook
 
 To access Jupyter Notebooks inside your environment, type: jupyter notebook. This will open a new tab in whatever your default browser is. 
+![image](https://user-images.githubusercontent.com/50416928/141779762-0489c661-c0c3-46cc-873c-96d04278f787.png)
 
 This new tab will direct you to Jupyter Notebooks automatically. This is not a server available to anyone else online, it is a mirror of what you have in your C drive on your computer. It's comparable to an online and nicely formatted version of File Explorer on Windows or Finder on Mac.
+![image](https://user-images.githubusercontent.com/50416928/141779792-5409d8d8-f1f9-4151-be40-88a574a05e48.png)
 
-To make a new notebook, navigate to a folder you'd like the notebook to be in (I made a new folder for this lesson, you can put it anywhere you'd like) and click the "New" button in the upper right hand corner of the screen, and select the python file available (PUT SPECIFICS HERE). This creates a new Jupyter Notebook for you to work in.
+
+To make a new notebook, navigate to a folder you'd like the notebook to be in (I made a new folder for this lesson, you can put it anywhere you'd like) and click the "New" button in the upper right hand corner of the screen, and select the Python 3 (kernel) option.
+![image](https://user-images.githubusercontent.com/50416928/141779824-726f054c-1f93-46b4-8a05-2551b2950cd4.png)
+
+This creates a new Jupyter Notebook for you to work in.
+![image](https://user-images.githubusercontent.com/50416928/141779975-070f5b7a-b5be-4dbc-83ab-4dc47a95e071.png)
 
 ## Functions and Uses of Jupyter Notebooks
 
@@ -53,13 +71,20 @@ This may just look like a silly way to code if you are used to using something l
 
 ### Markdown Cells vs. Code Cells
 
-There are two types of "cells" in a Notebook. They are denoted by a blue border or a green border on the left side of the cell. The blue borders are markdown cells, while the green borders are code cells. Markdown cells are used for explanations, and can be formatted using Markdown syntax. Look at this link to learn about all of the cool things you can do with Markdown in a Jupyter Notebook: https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
+There are two types of "cells" in a Notebook. They are denoted by either no text on the left side for a Markdown cell, or a "line number" or Kernel execution number on the left side for a code cell.
+Markdown Cell:
+![image](https://user-images.githubusercontent.com/50416928/141781398-531fe818-9941-4cdf-b565-76c59aa10e61.png)
+
+Code Cell:
+![image](https://user-images.githubusercontent.com/50416928/141781436-5d8c2f78-0b3b-44fa-8e65-ceed1c9dd84d.png)
+
+Markdown cells are used for explanations, and can be formatted using Markdown syntax. Look at this link to learn about all of the cool things you can do with Markdown in a Jupyter Notebook: https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
 
 Code cells are for just that: code. Jupyter Notebooks have their own Python kernel which allows you to run Python code inside the notebook. You can do anything in Python that you would normally do in any other Python environment inside one of these code cells.
 
 ### Importing Some Data
 
-For this example, we will import the CSV file in this repository into our Notebook to avoid going into API calls and getting access to API keys. This CSV file contains data from Spotify about the album Little Dark Age by the artist MGMT. If you are interested in how I got this data, please refer to the Notebook in this repository titled (ADD TITLE HERE), or go to this link for a more viewer-friendly format: NBVIEWER LINK HERE.
+For this example, we will import the CSV file in this repository into our Notebook to avoid going into API calls and getting access to API keys. This CSV file contains data from Spotify about the album Little Dark Age by the artist MGMT. If you are interested in how I got this data, please refer to the Notebook in this repository titled spotifyCSVData, or go to this link for a more viewer-friendly format: NBVIEWER LINK HERE.
 
 To import this CSV file into our Notebook, we will have to get the path of the CSV file. You can do this by downloading the CSV file from this repository and adding it to the same folder your notebook is in (through File Explorer or Finder), or getting the path for where it is after you download it. Either works!
 
