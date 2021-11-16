@@ -1,6 +1,6 @@
 # JupyterNotebooks-and-Anacoda
 
-A lesson about what Jupyter Notebooks and Anaconda can do!
+A lesson about what Jupyter Notebooks and Anaconda can do! \n
 Written by Katie Cochran, Fall 2021
 
 ## Installing Necessary Software
