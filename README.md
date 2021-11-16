@@ -1,15 +1,14 @@
 # JupyterNotebooks-and-Anacoda
 
 A lesson about what Jupyter Notebooks and Anaconda can do!
+Written by Katie Cochran, Fall 2021
 
 ## Installing Necessary Software
 
-Follow these links to install Anaconda, an environment manager, onto your machine
-Windows: https://docs.anaconda.com/anaconda/install/windows/
-Mac: https://docs.anaconda.com/anaconda/install/mac-os/
+Follow these links to install Anaconda, an environment manager, onto your machine, [Windows](https://docs.anaconda.com/anaconda/install/windows/) or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/)
 
 All prompts you see are fine to click "I Accept" or "Next" for, you should not have to change anything in any of the windows. 
-If you are having some issues, here is a link that goes through all of the steps and what they mean! https://medium.com/@GalarnykMichael/install-python-anaconda-on-windows-2020-f8e188f9a63d
+If you are having some issues, here is a [link](https://medium.com/@GalarnykMichael/install-python-anaconda-on-windows-2020-f8e188f9a63d) that goes through all of the steps and what they mean! 
 
 Once Anaconda is installed, you can go to the search bar at the bottom of your screen (or click the windows key) and type "anaconda". You should see something come up called the Anaconda Prompt. This is like Command Prompt (CMD), but it is specifically for Anaconda commands and manipulation of environments in the Anaconda environment manager.
 
@@ -40,7 +39,7 @@ To install matplotlib, type: conda install matplotlib
 To install pandas, type: conda install pandas
 ![image](https://user-images.githubusercontent.com/50416928/141779410-07a1da4d-8454-47d9-a052-3d24c971fb71.png)
 
-If you would like to explore either of these libraries, the documentation for matplotlib can be found here https://matplotlib.org/stable/contents.html and the documentation for pandas can be found here https://pandas.pydata.org/docs/
+If you would like to explore either of these libraries, the documentation for matplotlib can be found [here](https://matplotlib.org/stable/contents.html) and the documentation for pandas can be found [here](https://pandas.pydata.org/docs/)
 
 ## Installing Jupyter
 
@@ -78,13 +77,13 @@ Markdown Cell:
 Code Cell:
 ![image](https://user-images.githubusercontent.com/50416928/141781436-5d8c2f78-0b3b-44fa-8e65-ceed1c9dd84d.png)
 
-Markdown cells are used for explanations, and can be formatted using Markdown syntax. Look at this link to learn about all of the cool things you can do with Markdown in a Jupyter Notebook: https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
+Markdown cells are used for explanations, and can be formatted using Markdown syntax. Look at this [link](https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd) to learn about all of the cool things you can do with Markdown in a Jupyter Notebook.
 
 Code cells are for just that: code. Jupyter Notebooks have their own Python kernel which allows you to run Python code inside the notebook. You can do anything in Python that you would normally do in any other Python environment inside one of these code cells.
 
 ### Importing Some Data
 
-For this example, we will import the CSV file in this repository into our Notebook to avoid going into API calls and getting access to API keys. This CSV file contains data from Spotify about the album Little Dark Age by the artist MGMT. If you are interested in how I got this data, please refer to the Notebook in this repository titled spotifyCSVData, or go to this link for a more viewer-friendly format: NBVIEWER LINK HERE.
+For this example, we will import the CSV file in this repository into our Notebook to avoid going into API calls and getting access to API keys. This CSV file contains data from Spotify about the album Little Dark Age by the artist MGMT. If you are interested in how I got this data, please refer to the Notebook in this repository titled spotifyCSVData, or go to this [link](NBVIEWER LINK) for a more viewer-friendly format.
 
 To import this CSV file into our Notebook, we will have to get the path of the CSV file. You can do this by downloading the CSV file from this repository and adding it to the same folder your notebook is in (through File Explorer or Finder), or getting the path for where it is after you download it. Either works!
 
@@ -127,7 +126,7 @@ CODE TO PLOT GRAPH BASED ON VARIABLES HERE
 
 Sometimes you might want to share your findings with others. You could share the raw notebook file, but then whoever you share it would have to have some way to view it. This may involve installing Jupyter Notebooks on their own computer, and for someone who may not be as technically inclined as yourself this might be a lot. Instead, you can upload your Notebook file to Github, and past the link leading to it into another website called NBViewer. This website generates another link that displays the Notebook file in the Github repo nicely, and can be shared and accessed by anyone with an internet browser.
 
-Once you have uploaded the notebook file to Github, paste the link to the file in Github into the form on this website: https://nbviewer.org/ and click the "Go!" button. The next page is the URL to your Notebook, rendered with NBViewer.
+Once you have uploaded the notebook file to Github, paste the link to the file in Github into the form on [this](https://nbviewer.org/) website and click the "Go!" button. The next page is the URL to your Notebook, rendered with NBViewer.
 
 ## Closing a Notebook file and stopping environment
 
@@ -137,10 +136,10 @@ To stop the environment in Anaconda, go to the Anaconda Prompt and type: conda d
 
 ## Further Learning
 
-I taught this lesson with knowledge from one of the classes I am currently in, called Data in Emerging Media and Technology, through the College of Emerging Media and Technology (EMAT). This class is part of my minor, Web Design and Development, also from the College of EMAT. If you are interested in things like this or data science and analysis, I would highly recommend this class! Please feel free to reach out to me on Discord with any questions you have, or refer to the below links to learn more about this program!
+I taught this lesson with knowledge from one of the classes I am currently in, called Data in Emerging Media and Technology, through the College of Emerging Media and Technology (EMAT). This class is part of my minor, Web Design and Development, also from the College of EMAT. If you are interested in things like this or data science and analysis, I would highly recommend this class! Please feel free to reach out to me on Discord with any questions you have, and Dr. David Silva has also agreed to answer your questions, he is the professor who taught this course. His email is: dsilva2@kent.edu. There are also links below if you'd like to learn about the programs!
 
-College of Emerging Media and Technology https://www.kent.edu/emat
-Minor https://www.kent.edu/emat/minor-web-design-development
-Class EMAT 22110 http://catalog.kent.edu/colleges/ci/emat/web-design-and-development-minor/#programrequirementstext
+[College of Emerging Media and Technology](https://www.kent.edu/emat)
+[Minor](https://www.kent.edu/emat/minor-web-design-development)
+[Class EMAT 22110](http://catalog.kent.edu/colleges/ci/emat/web-design-and-development-minor/#programrequirementstext)
 
 
