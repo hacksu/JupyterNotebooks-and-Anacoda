@@ -142,7 +142,7 @@ This is a lot :) This is all syntax from the matplotlib pyplot library, used for
 
 `for i, label in enumerate(data['name']):
     plt.annotate(label, (data['danceability'][i]+.002, data['energy'][i]+.002))`
-gives the dots on the graph something called jitter. This is a bit of a hard concept to wrap your head around, but it is something that data anaylsts do so that if two dots end up in the same spot, they can be offset so both can be shown without overlapping each other.
+displays the proper name for the dot based on the Data Frame.3
 
 `plt.show()` shows the graph nicely without any extra output. And we're done!!
 
