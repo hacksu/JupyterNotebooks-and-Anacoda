@@ -124,13 +124,13 @@ In this example, we will use the data from the CSV file to compare variables cal
 
 Type this into the same cell you typed the `fig1, ax1...` code in in your notebook:
 
-`ax1.scatter(data['danceability'], data['energy'])
-plt.xlabel("Danceability")
-plt.ylabel("Energy")
-lt.title("How are the danceability and energy ratings for the Little Dark Age album tracks related?")
-for i, label in enumerate(data['name']):
-    plt.annotate(label, (data['danceability'][i]+.002, data['energy'][i]+.002))
-plt.show()`
+    `ax1.scatter(data['danceability'], data['energy'])
+    plt.xlabel("Danceability")
+    plt.ylabel("Energy")
+    plt.title("How are the danceability and energy ratings for the Little Dark Age album tracks related?")
+    for i, label in enumerate(data['name']):
+        plt.annotate(label, (data['danceability'][i]+.002, data['energy'][i]+.002))
+    plt.show()`
 
 This is a lot :) This is all syntax from the matplotlib pyplot library, used for plotting different types of graphs. We are using a scatterplot so that we can see each point and how it relates to other points. 
 
