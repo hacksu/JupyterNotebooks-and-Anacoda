@@ -115,6 +115,7 @@ There are a lot of different plots we can make with matplotlib. To plot any type
 First, type: `from matplotlib import pyplot as plt` and run the cell.
 
 Insert another cell below it and type this code:
+  
   `fig1, ax1 = plt.subplots(1, 1, figsize = (10, 10))`
 
 This line of code defines a figure and an axes for us to plot on. The subplots function takes several parameters. The only required parameters are two numbers, one for number of rows and number of columns. This is because you can have multiple graphs on the same set of axes. Because we specified 1, 1, that means there is only one spot to plot. figsize is an optional parameter, which makes the size of all figures plotted 10 "inches" by 10 "inches". "Inches" is an arbitrary measurement in this case because the plot won't actually be 10 inches by 10 inches on the screen, it is just the label that pyplot gives to measure the graph size.
@@ -124,11 +125,17 @@ In this example, we will use the data from the CSV file to compare variables cal
 Type this into the same cell you typed the `fig1, ax1...` code in in your notebook:
 `
 ax1.scatter(data['danceability'], data['energy'])
+
 plt.xlabel("Danceability")
+
 plt.ylabel("Energy")
+
 plt.title("How are the danceability and energy ratings for the Little Dark Age album tracks related?")
+
 for i, label in enumerate(data['name']):
+    
     plt.annotate(label, (data['danceability'][i]+.002, data['energy'][i]+.002))
+
 plt.show()
 `
 
