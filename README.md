@@ -123,21 +123,14 @@ This line of code defines a figure and an axes for us to plot on. The subplots f
 In this example, we will use the data from the CSV file to compare variables called "dancability" and "energy". These are two variables that Spotify calculates based on an algorithm that we unforunately are not privy to. What we do know is that these two variables are something that every track has, and that they vary based on what the track sounds like and other things that Spotify deems important. We are going to create a scatter plot to show this coorelation, if it exists, and to also show what point belonds to what track. 
 
 Type this into the same cell you typed the `fig1, ax1...` code in in your notebook:
-`
-ax1.scatter(data['danceability'], data['energy'])
 
+`ax1.scatter(data['danceability'], data['energy'])
 plt.xlabel("Danceability")
-
 plt.ylabel("Energy")
-
-plt.title("How are the danceability and energy ratings for the Little Dark Age album tracks related?")
-
+lt.title("How are the danceability and energy ratings for the Little Dark Age album tracks related?")
 for i, label in enumerate(data['name']):
-    
     plt.annotate(label, (data['danceability'][i]+.002, data['energy'][i]+.002))
-
-plt.show()
-`
+plt.show()`
 
 This is a lot :) This is all syntax from the matplotlib pyplot library, used for plotting different types of graphs. We are using a scatterplot so that we can see each point and how it relates to other points. 
 
